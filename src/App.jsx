@@ -1,14 +1,28 @@
-import { useState } from "react"
-import "./App.css"
+import React from "react"
+import { Routes, Route } from "react-router-dom"
+import DefaultLayout from "./components/Layout/DefaultLayout"
+import HomePage from "./pages/home/HomePage"
+import SignUpPage from "./pages/auth/SignUpPage"
+import SignInPage from "./pages/auth/SignInPage"
+import UserLayout from "./components/Layout/UserLayout"
+import Dashboard from "./pages/dashboard/Dashboard"
 
-function App() {
+const App = () => {
   return (
     <>
-      <div className=''>
-        <h1 className=' h-[50px] my-5 text-grey-900 font-medium text-4xl text-center '>
-          Library Management System
-        </h1>
-      </div>
+      <Routes>
+        {/* public routes  */}
+        <Route path='/' element={<DefaultLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path='signup' element={<SignUpPage />} />
+          <Route path='signin' element={<SignInPage />} />
+        </Route>
+
+        {/* private routes  */}
+        <Route path='/user' element={<UserLayout />}>
+          <Route index element={<Dashboard />} />
+        </Route>
+      </Routes>
     </>
   )
 }
