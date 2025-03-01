@@ -1,5 +1,5 @@
 import React from "react"
-import { UserSingUpForm } from "../../components/forms/UserSignupForm"
+import { UserSignUpForm } from "../../components/forms/UserSignupForm"
 
 const SignUpPage = () => {
   return (
@@ -8,7 +8,7 @@ const SignUpPage = () => {
       style={{ minHeight: "100vh" }}
     >
       <div style={{ width: "450px" }} className='card p-3 shadow-lg'>
-        <UserSingUpForm />
+        <UserSignUpForm />
       </div>
     </div>
   )

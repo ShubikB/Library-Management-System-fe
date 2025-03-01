@@ -4,7 +4,7 @@ import { CustomInput } from "../custom-input/CustomInput"
 import { userSignUpInputs } from "../../assets/form-data/userAuthInput"
 import useForm from "../../hooks/useForm"
 
-export const UserSingUpForm = () => {
+export const UserSignUpForm = () => {
   const { form, setForm, handleOnChange } = useForm({})
 
   const handleOnSubmit = (e) => {

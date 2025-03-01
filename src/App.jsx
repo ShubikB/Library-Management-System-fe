@@ -1,10 +1,10 @@
 import React from "react"
 import { Routes, Route } from "react-router-dom"
-import DefaultLayout from "./components/Layout/DefaultLayout"
+import DefaultLayout from "./components/layout/DefaultLayout"
 import HomePage from "./pages/home/HomePage"
 import SignUpPage from "./pages/auth/SignUpPage"
 import SignInPage from "./pages/auth/SignInPage"
-import UserLayout from "./components/Layout/UserLayout"
+import UserLayout from "./components/layout/UserLayout"
 import Dashboard from "./pages/dashboard/Dashboard"
 
 const App = () => {
