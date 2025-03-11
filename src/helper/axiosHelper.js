@@ -19,7 +19,7 @@ export const apiHelper = async ({ method, url, data, isPrivate, isRefreshToken =
   }
   try {
     const response = await axios({
-      method,
+      method, 
       url,
       data,
       headers,
