@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios"
 import BookCard from "./BookCard"
+import MyComponent from "./TurnicatedText"
 
 const FeaturedSection = () => {
   const [featureBooks, setFeatureBooks] = useState([])
@@ -28,6 +29,7 @@ const FeaturedSection = () => {
         ))}
         <div />
       </div>
+      <MyComponent />
     </>
   )
 }

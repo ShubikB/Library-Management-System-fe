@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import TurnicatedText from "./TurnicatedText"
 
 const BookCard = ({ book }) => {
   return (
@@ -10,7 +11,7 @@ const BookCard = ({ book }) => {
       <div className='card-body items-center text-center'>
         <h2 className='card-title text-xl'>{book.title}</h2>
         <h4 className='font-semibold'>{book.author}</h4>
-        <p className=''>{book.description}</p>
+        <TurnicatedText text={book.description} maxLength={60} />
         <div className='card-actions'>
           <button className='btn btn-primary'>
             <Link to='#'>Burrow Now</Link>
