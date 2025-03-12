@@ -4,12 +4,12 @@ import { Link } from "react-router-dom"
 const Footer = () => {
   return (
     <>
-      <footer className='footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10'>
+      <footer className='footer footer-horizontal footer-center bg-base-200 text-base-content rounded p-10 '>
         <div className='flex '>
-          <Link to='#' className='btn btn-ghost'>
+          <Link to='/about' className='btn btn-ghost'>
             About us
           </Link>
-          <Link to='#' className='btn btn-ghost'>
+          <Link to='/contact' className='btn btn-ghost'>
             Contact
           </Link>
           <Link to='#' className='btn btn-ghost'>

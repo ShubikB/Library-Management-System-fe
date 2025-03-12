@@ -25,7 +25,7 @@ const FeaturedSection = () => {
 
       <div className='flex justify-center items-center flex-row flex-wrap gap-4 mt-3'>
         {featureBooks.map((book) => (
-          <BookCard key={book.id} book={book} />
+          <BookCard key={book._id} book={book} />
         ))}
         <div />
       </div>

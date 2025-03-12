@@ -12,14 +12,14 @@ const HomePage = () => {
             "url(https://images.pexels.com/photos/9572630/pexels-photo-9572630.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)",
         }}
       >
-        <h1 className='mb-5 text-5xl text-white font-bold'>Read. Learn. Grow.</h1>
+        <h1 className='mb-5 text-5xl text-white text-center font-bold'>Read. Learn. Grow.</h1>
 
-        <div className='flex gap-1'>
-          <label className='input'>
+        <div className='flex gap-1 flex-wrap justify-center'>
+          <label className='input min-w-80'>
             <input
               type='text'
               placeholder='Search Book'
-              className='text-center text-gray-800 text-lg'
+              className='text-center text-gray-800 text-lg '
             />
           </label>
 

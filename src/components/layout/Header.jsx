@@ -6,7 +6,7 @@ const Header = () => {
     <>
       <div className='navbar justify-between bg-base-100 shadow-sm px-10 '>
         <div className=' btn btn-ghost text-xl'>
-          <Link to='#'>The Central Library</Link>
+          <Link to='/'>The Central Library</Link>
         </div>
 
         <div className='flex justify-center items-center'>
@@ -33,11 +33,11 @@ const Header = () => {
               className='menu menu-md dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow right-0'
             >
               <li>
-                <Link to='#'>About</Link>
+                <Link to='/about'>About</Link>
               </li>
 
               <li>
-                <Link to='#'>Contact</Link>
+                <Link to='/contact'>Contact</Link>
               </li>
 
               {/* <li>
@@ -45,11 +45,11 @@ const Header = () => {
               </li> */}
 
               <li>
-                <Link to='#'>SignUp</Link>
+                <Link to='/signup'>SignUp</Link>
               </li>
 
               <li>
-                <Link to='#'>SignIn</Link>
+                <Link to='/signin'>SignIn</Link>
               </li>
             </ul>
           </div>
@@ -57,11 +57,11 @@ const Header = () => {
           <div className='hidden lg:flex'>
             <ul className='menu menu-horizontal px-1'>
               <li>
-                <Link to='#'>About</Link>
+                <Link to='/about'>About</Link>
               </li>
 
               <li>
-                <Link to='#'>Contact</Link>
+                <Link to='/contact'>Contact</Link>
               </li>
 
               {/* <li>
@@ -69,11 +69,11 @@ const Header = () => {
               </li> */}
 
               <li>
-                <Link to='#'>SignUp</Link>
+                <Link to='/signup'>SignUp</Link>
               </li>
 
               <li>
-                <Link to='#'>SignIn</Link>
+                <Link to='/signin'>SignIn</Link>
               </li>
             </ul>
           </div>
@@ -94,13 +94,13 @@ const Header = () => {
               className='menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow'
             >
               <li>
-                <Link to='#'>Profile</Link>
+                <Link to='/profile'>Profile</Link>
               </li>
               <li>
-                <Link to='#'>Setting</Link>
+                <Link to='/setting'>Setting</Link>
               </li>
               <li>
-                <Link to='#'>Logout</Link>
+                <Link to='/logout'>Logout</Link>
               </li>
             </ul>
           </div>
